@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "ユーザー入力に対して補足情報を参考に応答を返す",
+  "completion": {
+    "max_tokens": 1024,
+    "temperature": 0.7,
+    "top_p": 0.5,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.1
+  },
+  "input": {
+    "parameters": [
+      {
+        "name": "INPUT",
+        "description": "ユーザーの入力文章",
+        "defaultValue": ""
+      },
+      {
+        "name": "ADDITIONAL_INFO",
+        "description": "補足情報",
+        "defaultValue": ""
+      }
+    ]
+  }
+}
